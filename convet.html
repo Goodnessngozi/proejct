@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Of A Temperature Converter</title>
+    <link rel="stylesheet" href="convert.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <div class="logo"><h2>Temperature <span>Converter</span></h2></div>
+        <ul class="toggle">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="convet.html">Temperature Converter</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="time">
+            <i class="fa-solid fa-times"></i>
+        </div>
+    </div>
+
+
+    <div class="converter">
+        <div class="converter_container">
+            <h1 class="logo_text">Temperature Converter</h1> <br>
+        
+            <label  for="fromUnit">From:</label> 
+            <select id="fromunit">
+                <option value=""></option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+                <option value="R">Rankine</option>
+            </select> 
+
+            <label  for="toUnit">To:</label> 
+            <select id="tounit">
+                <option value=""></option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+                <option value="R">Rankine</option>
+            </select>
+
+            <label for="temprature">Temperature</label>
+            <input type="number" id="temprature" placeholder="Enter Temperature">
+            <button onclick="convert()"> Convert </button>
+
+            <label for="result">Result:</label>
+            <input type="text" id="result" readonly>
+        </div>
+
+    </div>
+
+
+    <script src="converter.js"></script>
+    <script src="togglemenu.js"></script>
+</body>
+</html>
